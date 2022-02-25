@@ -8,7 +8,7 @@ ReferenceManager::ReferenceManager(int capacity) {
 bool ReferenceManager::add(Reference& reference) {
 	if (size < capacity) {
 
-		storage[size] = reference;
+		storage[size] = reference; //L'erreur est ici
 		size++;
 		return true;
 	}
